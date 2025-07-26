@@ -25,6 +25,7 @@ RUN npm install --production
 
 RUN rm -f .npmrc
 
+ENV REDIS_URL=${REDIS_URL}
 # Bundle app source
 COPY . .
 
